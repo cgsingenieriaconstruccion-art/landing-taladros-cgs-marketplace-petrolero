@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taladros y Equipos de Perforación | CGS Marketplace Petrolero</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0b132b',
+                        brandBlue: '#1c2541',
+                        brandAccent: '#f7b801',
+                        brandHighlight: '#3a86ff'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandDark text-slate-100 font-sans antialiased selection:bg-brandAccent selection:text-black">
+
+    <!-- Header / Navbar -->
+    <header class="w-full border-b border-slate-800 bg-brandDark/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-brandAccent text-brandDark font-extrabold text-xl flex items-center justify-center rounded-lg shadow-lg">
+                    CGS
+                </div>
+                <span class="font-bold text-lg tracking-wider text-white">MARKETPLACE <span class="text-brandAccent">PETROLERO</span></span>
+            </div>
+            <a href="https://pagina-web-cgs-marketplace-1.vercel.app/" target="_blank" class="text-xs md:text-sm text-slate-300 hover:text-brandAccent transition font-medium flex items-center gap-2">
+                <span>Ver Catálogo Completo</span>
+                <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section para Equipos Estrella -->
+    <section class="py-12 md:py-20 px-4 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Columna Izquierda -->
+        <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 bg-brandBlue text-brandAccent px-3 py-1.5 rounded-full text-xs font-semibold tracking-wide border border-brandAccent/30">
+                <i class="fa-solid fa-award"></i>
+                <span>Equipos Verificados y Estándares API</span>
+            </div>
+            
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white leading-tight">
+                Disponibilidad de <span class="text-brandAccent">Taladros de Perforación</span> y Workover en Venezuela
+            </h1>
+            
+            <p class="text-slate-300 text-base md:text-lg leading-relaxed">
+                Accede a inventario certificado de Land Rigs, conjuntos BOP, tubería de perforación y sistemas de control de pozos. Inspección técnica presencial y garantía de seriedad operacional.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-slate-800">
+                <div class="p-4 bg-brandBlue/40 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-gears text-brandAccent text-2xl mb-2"></i>
+                    <h3 class="font-bold text-sm text-white">Capacidad Operativa</h3>
+                    <p class="text-xs text-slate-400 mt-1">Equipos desde 500 HP hasta 2000 HP disponibles.</p>
+                </div>
+                <div class="p-4 bg-brandBlue/40 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-file-contract text-brandHighlight text-2xl mb-2"></i>
+                    <h3 class="font-bold text-sm text-white">Dossier Normativo</h3>
+                    <p class="text-xs text-slate-400 mt-1">Trazabilidad técnica y certificaciones de mantenimiento.</p>
+                </div>
+                <div class="p-4 bg-brandBlue/40 rounded-xl border border-slate-800">
+                    <i class="fa-solid fa-user-shield text-emerald-400 text-2xl mb-2"></i>
+                    <h3 class="font-bold text-sm text-white">Protocolo Seguro</h3>
+                    <p class="text-xs text-slate-400 mt-1">Proceso transparente de validación en 2 etapas.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Formulario de Solicitud de Cotización/Inspección -->
+        <div class="lg:col-span-5 bg-brandBlue p-6 md:p-8 rounded-2xl shadow-2xl border border-slate-700 relative">
+            <h2 class="text-xl font-bold text-white mb-2">Solicitar Dossier e Inspección</h2>
+            <p class="text-xs text-slate-400 mb-6">Indica el equipo de tu interés para agendar una reunión técnica o visita en sitio.</p>
+
+            <form action="https://formsubmit.co/Oscarpirela1957@gmail.com" method="POST" class="space-y-4">
+                <input type="hidden" name="_next" value="https://pagina-web-cgs-marketplace-1.vercel.app/">
+                <input type="hidden" name="_subject" value="¡Nueva Solicitud de Taladros / Equipos Estrella!">
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Nombre o Empresa Compradora *</label>
+                    <input type="text" name="empresa_compradora" required placeholder="Ej. Operadora / Contratista" class="w-full bg-brandDark/80 border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brandAccent transition">
+                </div>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Teléfono *</label>
+                        <input type="tel" name="telefono" required placeholder="+58 4XX XXX-XXXX" class="w-full bg-brandDark/80 border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brandAccent transition">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-300 mb-1">Correo Corporativo *</label>
+                        <input type="email" name="email" required placeholder="compras@empresa.com" class="w-full bg-brandDark/80 border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brandAccent transition">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Equipo Requerido *</label>
+                    <select name="equipo_requerido" required class="w-full bg-brandDark/80 border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brandAccent transition">
+                        <option value="" disabled selected>Selecciona un equipo</option>
+                        <option value="Taladro de Perforación (Land Rig)">Taladro de Perforación (Land Rig)</option>
+                        <option value="Taladro de Workover / Mantenimiento">Taladro de Workover / Mantenimiento</option>
+                        <option value="BOP Stack / Sistema de Control de Pozos">BOP Stack / Sistema de Control de Pozos</option>
+                        <option value="Lote de Tubería Drill Pipe / Casing">Lote de Tubería Drill Pipe / Casing</option>
+                        <option value="Sistemas BHA / Herramientas de Fondo">Sistemas BHA / Herramientas de Fondo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 mb-1">Especificaciones de Requerimiento</label>
+                    <textarea name="especificaciones" rows="3" placeholder="Indica potencia HP requerida, diámetros de tubería, zona de operación u otro detalle técnico..." class="w-full bg-brandDark/80 border border-slate-700 rounded-lg px-3 py-2.5 text-sm text-white focus:outline-none focus:border-brandAccent transition text-xs"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-brandAccent hover:bg-yellow-400 text-brandDark font-extrabold py-3 rounded-lg shadow-lg hover:shadow-yellow-500/20 transition transform active:scale-95 text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span>Solicitar Cotización y Dossier</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-slate-800 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>© 2026 CGS Ingeniería & Construcción, C.A. Todos los derechos reservados.</p>
+            <div class="flex gap-4">
+                <a href="https://pagina-web-cgs-marketplace-1.vercel.app/" class="hover:text-slate-300">Marketplace Principal</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
